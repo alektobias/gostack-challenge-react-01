@@ -19,7 +19,7 @@ const actWait = async (amount = 0) => {
 
 describe("App component", () => {
   it("should be able to add new repository", async () => {
-    const { getByText, getByTestId } = render(<App />);
+    const { getByText, getByTestId } = render(<App />); 
 
     apiMock.onGet("repositories").reply(200, []);
 
